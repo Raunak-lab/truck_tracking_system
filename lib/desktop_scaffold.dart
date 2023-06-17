@@ -56,26 +56,13 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                         ),
                       ),
                        const SizedBox(height: defaultPadding,),
-                      Stack(
-                        children:[
-                        Positioned.fill(child: Expanded(child: Container(
-                          height: 50,
-                          decoration: const BoxDecoration(
-                            color: primaryColor,
-                            borderRadius: BorderRadius.all(Radius.circular(10))
-                          ),
-                        ),),),
-                        Container(
-                          height:30,width: 5,
-
-                        ),
                         DashboardListTile(
                           title: "Dashboard",
                           icon: const Icon(Icons.grid_view_outlined),
                           press: () {  },
 
-                        ),]
-                      ),
+                        ),
+
                       const SizedBox(height: defaultPadding,),
 
                       DashboardListTile(

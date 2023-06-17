@@ -16,14 +16,13 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context,constraints)
-    {
-      if (constraints.maxWidth < 500) {
+    final screenWidth = MediaQuery.of(context).size.width;
+      if (screenWidth < 900) {
         return mobileScaffold;
       }
       else {
           return desktopScaffold;
       }
-    },);
+
   }
 }
